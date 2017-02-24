@@ -32,35 +32,6 @@
 <!-- End Navbar -->
 
 
-
-<!-- Start videogular  -->
-
-<div class="margintop">
-    <div class="container">
-        <div class="row">
-            <div class="videogular-container col-xs-12">
-                <videogular vg-theme="model.config.theme.url">
-                    <vg-media vg-src="model.config.sources"
-                              vg-tracks="model.config.tracks">
-                    </vg-media>
-
-
-                    <a ng-click="model.playMovie(model.movie)">
-                        <vg-overlay-play></vg-overlay-play>
-                    </a>
-
-                    <vg-poster vg-url='model.config.plugins.posterImage'></vg-poster>
-                </videogular>
-                <!--  videogular-container-->
-            </div>
-        </div>
-        <!-- container-fluid  -->
-    </div>
-    <!-- margintop -->
-</div>
-<!-- End videogular  -->
-
-
 <!-- Start Movie description -->
 
 <div class="container">
@@ -120,9 +91,36 @@
     </div>
 </div>
 
-
-
 <!-- End Movie description -->
+
+
+
+<!-- Start videogular  -->
+
+<div class="margintop">
+    <div class="container">
+        <div class="row">
+            <div class="videogular-container col-xs-12 playerHeight">
+                <videogular vg-theme="model.config.theme.url">
+                    <vg-media vg-src="model.config.sources"
+                              vg-tracks="model.config.tracks">
+                    </vg-media>
+
+
+                    <a ng-click="model.playMovie(model.movie)">
+                        <vg-overlay-play></vg-overlay-play>
+                    </a>
+
+                    <vg-poster vg-url='model.config.plugins.posterImage'></vg-poster>
+                </videogular>
+                <!--  videogular-container-->
+            </div>
+        </div>
+        <!-- container-fluid  -->
+    </div>
+    <!-- margintop -->
+</div>
+<!-- End videogular  -->
 
 
 
