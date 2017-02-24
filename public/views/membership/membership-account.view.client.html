@@ -1,0 +1,75 @@
+<!--Start Navbar  -->
+<div class="navbar-wrapper" >
+    <div class="container">
+
+        <nav class="navbar navbar-inverse navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand navfontfamily" href="#!/">
+                        Studi<i class="fa fa fa-play-circle-o icon-tby" aria-hidden="true"></i>Buzz</a>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+</div>
+<!-- End Navbar -->
+
+
+<!-- Start form -->
+
+<div class="container">
+
+    <div class="center-form panel">
+        <div class="panel-body">
+            <h4 class="text-center"><i class="ion-person-add"></i>Bank Account Details</h4>
+            <div ng-show="model.error" class="text-danger">
+                <h5 class="text-center"><i class="fa fa-times" aria-hidden="true"></i>
+                    Unable to process, please try again.</h5>
+            </div>
+            <form method="post" ng-submit="model.addAccountInfo()" name="signupForm">
+                <div class="form-group has-feedback" ng-class="{ 'has-error' : signupForm.accountname.$invalid && signupForm.accountname.$dirty }">
+                    <input class="form-control input-lg" type="text" id="accountname"
+                           name="accountname" ng-model="model.accountName" placeholder="Payee Account Name" required>
+                    <span class="ion-at form-control-feedback"></span>
+                </div>
+
+                <div class="form-group has-feedback" ng-class="{ 'has-error' : signupForm.accountnumber.$invalid && signupForm.accountnumber.$dirty }">
+                    <input class="form-control input-lg" type="number" name="accountnumber"
+                           ng-model="model.accountNumber" placeholder="Account Number" required>
+                    <span class="ion-key form-control-feedback"></span>
+                </div>
+
+                <div class="form-group has-feedback" ng-class="{ 'has-error' : signupForm.bankname.$invalid && signupForm.bankname.$dirty }">
+                    <input class="form-control input-lg" type="text" name="bankname"
+                           ng-model="model.accountBank" placeholder="Bank Name" required>
+                    <span class="ion-key form-control-feedback"></span>
+                </div>
+
+                <div class="form-group has-feedback" ng-class="{ 'has-error' : signupForm.ifsccode.$invalid && signupForm.ifsccode.$dirty }">
+                    <input class="form-control input-lg" type="text" name="ifsccode"
+                           ng-model="model.accountIfcs" placeholder="IFSC Code" required>
+                    <span class="ion-key form-control-feedback"></span>
+                </div>
+
+
+                <!--<button type="submit" ng-disabled="signupForm.$invalid" class="btn btn-block btn-primary ">Submit</button>-->
+
+                <button type="submit" class="btn btn-block btn-primary" ng-disabled="signupForm.$invalid"
+                        v-busy="model.isBusy"
+                        v-busy-label="Please wait" v-pressable>Submit</button>
+
+                <br/>
+                <p class="text-center text-muted"><small>To know about information storage please read our privacy policy</small></p>
+                <p class="text-center text-muted"><small>Click to cancel <a class="cursorpointer" ng-click="model.cancelAccountInfo()">Cancel</a></small></p>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!--footer start from here-->
+<div class="footer ">
+    <p class="footercontent pull-right">&copy; 2017 StudioBuzz. All rights reserved &nbsp;&nbsp;
+    </p>
+</div>
+<!--footer end from here-->

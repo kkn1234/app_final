@@ -1,0 +1,53 @@
+<!--Start Navbar  -->
+<div class="navbar-wrapper" >
+    <div class="container">
+
+        <nav class="navbar navbar-inverse navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand navfontfamily" href="#!/">
+                        Studi<i class="fa fa fa-play-circle-o icon-tby" aria-hidden="true"></i>Buzz</a>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+</div>
+<!-- End Navbar -->
+
+<!-- Start Carousel -->
+<div class="container">
+    <div class="row margintopcarousel" >
+        <div class='col-sm-12'>
+            <div class="covercarousel coverwatch" uib-carousel active="active" interval="model.myInterval" no-wrap="noWrapSlides">
+                <div uib-slide ng-repeat="slide in model.movie track by $index" index="$index" >
+                    <img class="imgwidth" ng-src="{{slide.cloudCoverUrl}}" style="margin:auto;">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Carousel -->
+
+<div id="content">
+<span class="fontsize">Now watch movies @ <strong>Studi<i class="fa fa fa-play-circle-o icon-tby" aria-hidden="true"></i>Buzz</strong></span>
+    <br><br>
+    <button class="btn btn-primary btnPrimary" ng-click="model.fbLogin()" v-busy="model.isBusy"
+            v-busy-label="Please wait" v-pressable>Watch Now</button>
+
+    <div ng-show="model.error" class="text-danger">
+        <h5 class="text-center"><i class="fa fa-times" aria-hidden="true"></i>
+            Unable to sign in, please try again.</h5>
+    </div>
+</div>
+
+
+<!--footer start from here-->
+<div class="footer ">
+    <p class="footercontent pull-right">&copy; 2017 StudioBuzz. All rights reserved |
+        <a class="membershiplogin marginall cursorpointer" ng-click="model.membershipLogin()">Membership</a>|
+        <a class="membershiplogin marginall cursorpointer" href="#!/privacy-policy">Privacy policy</a>|
+        <a class="membershiplogin marginall cursorpointer" href="#!/terms-service">Terms & conditions</a>&nbsp;&nbsp;
+    </p>
+</div>
+<!--footer end from here-->
