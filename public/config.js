@@ -7,7 +7,7 @@
         $qProvider.errorOnUnhandledRejections(false);
 
         ezfbProvider.setInitParams({
-            appId: '1841356159409982',
+            appId: '262173077558728',
             version: 'v2.8'
         });
 
