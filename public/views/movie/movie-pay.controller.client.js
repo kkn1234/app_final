@@ -10,7 +10,7 @@
             var userId = $routeParams.uid;
             var movieId = $routeParams.mid;
             vm.isBusy = false;
-            var redirect_url = 'http://localhost:8080/#!/user/'+ userId+'/home/movie-pay/'+ movieId +'/pay-success';
+            var redirect_url = 'http://studiobuzz.in/#!/user/'+ userId+'/home/movie-pay/'+ movieId +'/pay-success';
             vm.navMoviesList = navMoviesList;
             vm.navMoviesHome = navMoviesHome;
 
@@ -79,4 +79,3 @@
 
         }]);
 })();
-

@@ -10,7 +10,7 @@
             var vm = this;
             var userId = $routeParams.uid;
             var movieId = $routeParams.mid;
-            vm.fbUrl = 'http://localhost:8080/#!/movie-play/' + movieId;
+            vm.fbUrl = 'http://studiobuzz.in/#!/movie-play/' + movieId;
             vm.userReview = userReview;
             var userObj = {};
             vm.navMoviesList = navMoviesList;
