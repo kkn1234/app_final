@@ -446,3 +446,7 @@ li.movieformsearch{
 .playerHeight{
 height: 400px;
 }
+
+.imgBorder{
+    border: 3px solid white;
+}

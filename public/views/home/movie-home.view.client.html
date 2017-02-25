@@ -60,8 +60,8 @@
                    autoplay="true" autoplaySpeed="5000">
                 <div ng-repeat="img in model.movie">
 
-                    <div class="figureimg">
-                        <ui-thumbnail src="img.cloudThumbUrl" opts="{width: 182, height: 268}"></ui-thumbnail>
+                    <div class="figureimg imageshadow imgBorder marginall">
+                        <ui-thumbnail class="" src="img.cloudThumbUrl" opts="{width: 182, height: 268}"></ui-thumbnail>
                         <div class="figcap">
                             <a ng-click="model.watchMovieById(img._id)"><span class="cursorpointer figureplay text-center glyphicon glyphicon-play-circle"></span></a>
                         </div>
@@ -118,7 +118,7 @@
             <div ng-show="model.featuretab" ng-repeat="image in model.movie | filter: {title: model.movieSearch}
             | filter: {language: movieFilter}">
                 <div class="col-lg-2 col-sm-3 col-xs-4">
-                    <div class="figureimg imageshadow">
+                    <div class="figureimg imageshadow imgBorder marginall">
                         <ui-thumbnail  src="image.cloudThumbUrl" opts="{width: 182, height: 268}"></ui-thumbnail>
                         <div class="figcap">
                             <a ng-click="model.watchMovieById(image._id)"><span class="cursorpointer figureplay text-center glyphicon glyphicon-play-circle"></span></a>
@@ -132,7 +132,7 @@
             <div ng-show="model.viewtab" ng-repeat="image in model.movie | filter: {title: model.movieSearch}
             | filter: {language: movieFilter} | filter: model.viewNavTab('views', 0) | orderBy: 'views': true">
                 <div class="col-lg-2 col-sm-3 col-xs-4 ">
-                    <div class="figureimg imageshadow">
+                    <div class="figureimg imageshadow imgBorder marginall">
                         <ui-thumbnail src="image.cloudThumbUrl" opts="{width: 182, height: 268}"></ui-thumbnail>
                         <div class="figcap">
                             <a ng-click="model.watchMovieById(image._id)"><span class="cursorpointer figureplay text-center glyphicon glyphicon-play-circle"></span></a>
@@ -146,7 +146,7 @@
             <div ng-show="model.ratingtab" ng-repeat="image in model.movie | filter: {title: model.movieSearch}
             | filter: {language: movieFilter} | filter: model.viewNavTab('rating', 0) | orderBy: 'rating': true">
                 <div class="col-lg-2 col-sm-3 col-xs-4">
-                    <div class="figureimg imageshadow">
+                    <div class="figureimg imageshadow imgBorder marginall">
                         <ui-thumbnail class="img img-responsive" src="image.cloudThumbUrl" opts="{width: 182, height: 268}"></ui-thumbnail>
                         <div class="figcap">
                             <a ng-click="model.watchMovieById(image._id)"><span class="cursorpointer figureplay text-center glyphicon glyphicon-play-circle"></span></a>
@@ -160,7 +160,7 @@
             <div ng-show="model.recenttab" ng-repeat="image in model.movie | filter: {title: model.movieSearch}
             | filter: {language: movieFilter} | orderBy: 'uploaded': true">
                 <div class="col-lg-2 col-sm-3 col-xs-4">
-                    <div class="figureimg imageshadow">
+                    <div class="figureimg imageshadow imgBorder marginall">
                         <ui-thumbnail class="img img-responsive" src="image.cloudThumbUrl" opts="{width: 182, height: 268}"></ui-thumbnail>
                         <div class="figcap">
                             <a ng-click="model.watchMovieById(image._id)"><span class="cursorpointer figureplay text-center glyphicon glyphicon-play-circle"></span></a>
@@ -173,6 +173,7 @@
         </div>
     </div>
 </div>
+
 
 
 <!--footer start from here-->
