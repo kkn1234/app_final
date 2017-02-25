@@ -9,6 +9,6 @@ app.use(express.static(__dirname + '/public'));
 
 require('./server/app')(app);
 
-app.listen(80, function () {
+app.listen(8000, function () {
    console.log('Server running');
 });
