@@ -7,6 +7,9 @@
             var vm = this;
             vm.isBusy = false;
             vm.isLoggedIn = false;
+            vm.myInterval = 3000;
+            vm.noWrapSlides = false;
+            vm.active = 0;
 
 
             var thumbnailImage = MovieService.findAllMovie().then(function (movie) {
