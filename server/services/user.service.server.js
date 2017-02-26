@@ -6,6 +6,15 @@ module.exports = function (app, model) {
     app.get('/api/user/:fbId', findUserByfbId);
     app.get('/api/user/id/:uid', findUserById);
     app.post('/api/user/:uid', updateUserRating);
+    app.get('/api/user', findAllUser);
+
+    function findAllUser(req, res) {
+        model.userModel.findAllUser().then(function (movies) {
+            res.send(movies);
+        }, function (err) {
+            res.sendStatus(400);
+        });
+    }
 
     function  updateUserRating(req, res) {
         var userId = req.params.uid;

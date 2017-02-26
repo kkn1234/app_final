@@ -10,9 +10,20 @@
             createUser: createUser,
             findUserByfbId: findUserByfbId,
             findUserById: findUserById,
-            updateUserRating: updateUserRating
+            updateUserRating: updateUserRating,
+            findAllUser: findAllUser
         };
         return api;
+
+
+        function findAllUser() {
+            var promise = $http.get('/api/user').then(function (res) {
+                return res;
+            }, function (err) {
+                return err;
+            });
+            return promise;
+        }
 
         function updateUserRating(userId, userstar) {
             var url = '/api/user/' + userId ;

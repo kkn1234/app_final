@@ -1,0 +1,87 @@
+<!--Start Navbar  -->
+<div class="navbar-wrapper" >
+    <div class="container">
+
+        <nav class="navbar navbar-inverse navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand navfontfamily cursorpointer" ng-click="model.navMoviesHome()">
+                        Studi<i class="fa fa fa-play-circle-o icon-tby" aria-hidden="true"></i>Buzz</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="cursorpointer" ng-click="model.navMoviesLogout()">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+</div>
+<!-- End Navbar -->
+
+
+<div class="container margintop">
+    <div class="panel panel-body">
+        <h3 class="text-center text-success">Movies</h3>
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Movie Title</th>
+                <th>Rating</th>
+                <th>Views</th>
+                <th>Estimated Earning</th>
+                <th>Approval Status</th>
+                <th>Approve</th>
+                <th>Disapprove</th>
+                <th>Upload Date</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat = 'movie in model.movies'>
+                <td>{{movie.title}}</td>
+                <td>{{movie.rating | number:1}}</td>
+                <td>{{movie.views}}</td>
+                <td>INR {{movie.earning}}</td>
+                <td>{{movie.approveFlag}}</td>
+                <th><a class="btn btn-success btn-sm" ng-click="model.movieApproveStatus(movie._id, true)">Approve</a></th>
+                <th><a class="btn btn-danger btn-sm" ng-click="model.movieApproveStatus(movie._id, false)">Disapprove</a></th>
+                <td>{{movie.created | date: 'dd-MMM-yy'}}</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+<div class="container">
+<div class="panel panel-body">
+    <h3 class="text-center text-success">User</h3>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>User Name</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat = 'user in model.user'>
+            <td>{{user.username}}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+
+
+<!--footer start from here-->
+<div class="footer ">
+    <p class="footercontent pull-right">&copy; 2017 StudioBuzz. All rights reserved
+    </p>
+</div>
+<!--footer end from here-->

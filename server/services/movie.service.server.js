@@ -33,7 +33,19 @@ module.exports = function (app, model) {
     app.get('/api/movie', findAllMovie);
     app.post('/api/movie/update/rating/:mid', updateRating);
     app.post('/api/movie/view/:mid', incrementView);
+    app.post('/api/movie/approve/:mid', movieApproveStatus);
 
+    function movieApproveStatus (req, res) {
+        var movieId = req.params.mid;
+        var data = req.body;
+        console.log([data, data.flag]);
+        model.movieModel.movieApproveStatus(data,movieId).then(function (movie) {
+            res.send(movie);
+        }, function (err) {
+            res.sendStatus(400).send(err);
+        });
+        // res.send(200);
+    }
 
     function incrementView(req, res) {
         var movieId = req.params.mid;

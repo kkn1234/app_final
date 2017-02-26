@@ -2,8 +2,8 @@
 (function () {
     var app = angular.module('studiobuzz');
 
-    app.controller('MembershipTermsController', ['$location','$routeParams',
-        function ($location, $routeParams) {
+    app.controller('MembershipTermsController', ['$location','$routeParams', 'ezfb',
+        function ($location, $routeParams, ezfb) {
             var vm = this;
 
             vm.membershipProceed = membershipProceed;

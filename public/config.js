@@ -73,6 +73,12 @@
                 templateUrl: 'views/dashboard/dashboard-upload.view.client.html',
                 controller: 'DashboardUploadContoller',
                 controllerAs: 'model'
+            }).when('/admin/dashboard', {
+                templateUrl: 'views/user/admin.dashboard.view.client.html',
+                controller: 'AdminDashboardController',
+                controllerAs: 'model'
+            }).otherwise({
+                redirectTo: '/'
             });
 
 

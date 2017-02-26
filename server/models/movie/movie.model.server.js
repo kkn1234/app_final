@@ -18,6 +18,7 @@ module.exports = function () {
         findAllMovie: findAllMovie,
         updateRating: updateRating,
         incrementView: incrementView,
+        movieApproveStatus: movieApproveStatus,
         setModel: setModel
     };
     return api;
@@ -26,6 +27,17 @@ module.exports = function () {
         model = _model;
     }
 
+
+    function movieApproveStatus(data,movieId) {
+        var promise = MovieModel.update({_id: movieId}, {
+            approveFlag: data.flag
+        }).then(function (result) {
+            return result;
+        }, function (err) {
+            return err;
+        });
+        return promise;
+    }
 
     function incrementView(data, movieId) {
         var promise = MovieModel.findById(movieId).then(function (movieObj) {

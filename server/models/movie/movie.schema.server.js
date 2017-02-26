@@ -20,7 +20,7 @@ module.exports = function () {
         featuredlistAd: {type: String, default: 'No'},
         landingpageAd: {type: String, default: 'No'},
         coverAd: {type: String, default: 'No'},
-        approveFlag: {type: Boolean, default: true},
+        approveFlag: {type: Boolean, default: false},
         payment:[{type: mongoose.Schema.Types.ObjectId, ref:'PaymentModel'}],
         created: {type: Date, default: Date.now},
         comment:[{type: mongoose.Schema.Types.ObjectId, ref:'CommentModel'}]

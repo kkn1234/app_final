@@ -12,6 +12,7 @@ module.exports = function () {
         findUserByfbId: findUserByfbId,
         findUserById: findUserById,
         updateUserRating:updateUserRating,
+        findAllUser: findAllUser,
         setModel: setModel
     };
     return api;
@@ -19,6 +20,17 @@ module.exports = function () {
     function setModel(_model) {
         model = _model;
     }
+
+
+    function findAllUser() {
+        var promise = UserModel.find().then(function (user) {
+            return user;
+        }, function (err) {
+            return err;
+        });
+        return promise;
+    }
+
 
     function updateUserRating(ratingObj, userId) {
       var promise = UserModel.findById(userId).then(function (user) {

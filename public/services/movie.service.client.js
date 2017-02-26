@@ -19,10 +19,22 @@
             findAllMovie: findAllMovie,
             findMovieById: findMovieById,
             incrementView: incrementView,
-            updateRating: updateRating
+            updateRating: updateRating,
+            movieApproveStatus: movieApproveStatus
         };
         return api;
 
+
+        function movieApproveStatus(movieId, flag) {
+            var url = '/api/movie/approve/'+ movieId;
+            var data = {flag: flag};
+            var promise = $http.post(url, data).then(function (result) {
+                return result;
+            }, function (err) {
+                return err;
+            });
+            return promise;
+        }
 
         function updateRating(rating, movieId) {
             var url = '/api/movie/update/rating/' + movieId;
