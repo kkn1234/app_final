@@ -8,9 +8,24 @@
     function MovieRatingService($http) {
         var api = {
             updateMovieRating: updateMovieRating,
-            findMovieRating: findMovieRating
+            findMovieRating: findMovieRating,
+            createMovieRating: createMovieRating
         };
         return api;
+
+
+        function createMovieRating(mid) {
+            var userRate = {
+                mid: mid,
+            };
+            var url = '/api/rating/create';
+            var promise = $http.post(url, userRate).then(function (res) {
+                return res.data;
+            }, function (err) {
+                return err;
+            });
+            return promise;
+        }
 
 
         function findMovieRating(mid) {

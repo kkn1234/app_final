@@ -5,9 +5,7 @@ module.exports = function () {
     var UserSchema = mongoose.Schema({
         username: String,
         fbId: String,
-        ratingFlag: {type: Boolean, default:false},
-        rating:{type: Number, default:0}
+        rating:[]
     }, {collection: 'user'});
     return UserSchema;
 };
-

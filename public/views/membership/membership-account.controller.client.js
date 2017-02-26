@@ -3,13 +3,35 @@
     var app = angular.module('studiobuzz');
 
     app.controller('MembershipAccountController', ['$routeParams','MembershipUserService',
-        '$location', function ($routeParams, MembershipUserService, $location) {
+        '$location', 'ezfb', function ($routeParams, MembershipUserService, $location, ezfb) {
             var vm = this;
             vm.error = false;
             vm.isBusy = false;
             vm.addAccountInfo = addAccountInfo;
             vm.cancelAccountInfo = cancelAccountInfo;
             var userId = $routeParams.duid;
+            vm.navMoviesLogout = navMoviesLogout;
+            vm.isLoggedIn = false;
+
+            //get login status
+            ezfb.getLoginStatus(function (res) {
+                var loginStatus = res;
+                if (loginStatus.status === 'connected') {
+                    vm.isLoggedIn = true;
+                }
+            });
+
+            function navMoviesLogout() {
+                if (vm.isLoggedIn) {
+                    ezfb.logout().then(function(res) {
+                        $location.url('/');
+                    });
+                } else {
+                    $location.url('/');
+                }
+            }
+
+
 
             function addAccountInfo() {
                 vm.isBusy = true;

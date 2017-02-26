@@ -4,9 +4,9 @@
     var app = angular.module('studiobuzz');
 
     app.controller('MoviePlayController', ['MovieService', '$routeParams', '$sce',
-        'UserService', '$scope', '$location', 'MovieRatingService', 'PaymentService',
+        'UserService', '$scope', '$location', 'MovieRatingService', 'PaymentService', 'ezfb',
         function (MovieService, $routeParams, $sce, UserService,
-                   $scope, $location, MovieRatingService, PaymentService) {
+                   $scope, $location, MovieRatingService, PaymentService, ezfb) {
             var vm = this;
             var userId = $routeParams.uid;
             var movieId = $routeParams.mid;
@@ -15,6 +15,27 @@
             var userObj = {};
             vm.navMoviesList = navMoviesList;
             vm.navMoviesHome = navMoviesHome;
+            vm.navMoviesLogout = navMoviesLogout;
+            vm.isLoggedIn = false;
+
+            //get login status
+            ezfb.getLoginStatus(function (res) {
+                var loginStatus = res;
+                if (loginStatus.status === 'connected') {
+                    vm.isLoggedIn = true;
+                }
+            });
+
+            function navMoviesLogout() {
+                if (vm.isLoggedIn) {
+                    ezfb.logout().then(function(res) {
+                        $location.url('/');
+                    });
+                } else {
+                    $location.url('/');
+                }
+            }
+
 
 
 
@@ -45,7 +66,6 @@
                         var view = 1;
                         vm.views = MovieService.incrementView(view,data, movieId);
                         PaymentService.updateFlag(payId);
-                        // MovieService.updateEarning(data, movieId);
                     }
 
                 });
@@ -57,7 +77,8 @@
                          var rating = movie.rating;
                         console.log([rating, 'movie rating update']);
                         MovieService.updateRating(rating,movieId).then(function (result) {
-                            getMovieRating();
+                        }, function (err) {
+                            console.log(err);
                         });
                 }, function (err) {
                     console.log(err);
@@ -69,43 +90,61 @@
                     if(movie !== '0'){
                         vm.movieRating = movie.rating;
                         console.log([rating, 'movie rating update']);
+                    }else {
+                        var movieObj = MovieRatingService.createMovieRating(movieId).then(function (movie) {
+                            vm.movieRating = movie.rating;
+                        }, function (err) {
+                            console.log(err);
+                        });
                     }
                 }, function (err) {
                     console.log(err);
                 });
             };
 
+            var ratingObj = [];
             var getUserRating = function () {
                 var user = UserService.findUserById(userId).then(function (result) {
-                    var user = result.data;
+                    var userData = result.data;
                     userObj = user;
-                    if(user.ratingFlag === true){
-                        vm.ratingflag = true;
-                        vm.userRating = user.rating;
+                    var ratingArr = userData.rating;
+                    for(var r in ratingArr){
+                        var mId = ratingArr[r].movieId;
+                        if(mId === movieId){
+                            ratingObj.push(ratingArr[r]);
+                            console.log([ratingObj, 'user rating object']);
+                        }
+                        if(ratingObj.length > 0){
+                            vm.ratingflag = ratingObj[0].ratingflag;
+                            vm.userRating = ratingObj[0].rating;
+                        }else {
+                            vm.ratingflag = false;
+                        }
                     }
                 });
             };
 
             function userReview(userstar) {
-                UserService.findUserById(userId).then(function (result) {
-                    var userData = result.data;
-                    console.log(userstar);
-                    if(userData.ratingFlag === false){
-                        var userRating = {userRating: true,rating:userstar};
-                        var rating = UserService.updateUserRating(userId, userRating).then(function (obj) {
-                            var user = obj.data;
-                            console.log([user, ' userupdateaaa']);
-                            vm.ratingflag = user.ratingFlag;
-                            var userRating = MovieRatingService.updateMovieRating(userstar, movieId).then(function (res) {
-                                console.log([res , 'res']);
-                                getMovieRating();
-                                addMovieRating();
-                                vm.ratingflag = true;
-                            });
-                            console.log([user, ' userupdate']);
+                console.log('button clicked');
+                if(!vm.ratingflag){
+                    console.log('true');
+                    var movieRating = MovieRatingService.updateMovieRating(userstar, movieId).then(function (res) {
+                        console.log([res , 'res']);
+                        getMovieRating();
+                        addMovieRating();
+                        var ratingObj = {
+                            rating: userstar, movieId: movieId, ratingflag: true
+                        };
+                        var rating = UserService.updateUserRating(userId, ratingObj).then(function (obj) {
+                            getUserRating();
+                        }, function (err) {
+                            console.log(err);
                         });
-                    }
-                });
+                    }, function (err) {
+                        console.log(err);
+                    });
+
+                }
             }
 
             var movie = MovieService.findMovieById(movieId).then(function (movie) {

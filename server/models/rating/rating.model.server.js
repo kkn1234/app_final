@@ -9,6 +9,7 @@ module.exports = function () {
     var api = {
         updateRating: updateRating,
         findMovieRating: findMovieRating,
+        createMovieRating: createMovieRating,
         setModel: setModel
     };
     return api;
@@ -16,6 +17,19 @@ module.exports = function () {
     function setModel(_model) {
         model = _model;
     }
+
+
+    function createMovieRating( movieId) {
+        var user = {};
+        user.movieId = movieId;
+        var promise = RatingModel.create(user).then(function (res) {
+            return res;
+        }, function (err) {
+            return err;
+        });
+        return promise;
+    }
+
 
 
     function findMovieRating(movieId) {
@@ -30,8 +44,8 @@ module.exports = function () {
 
 
     function updateRating(userstar, movieId) {
-        var promise = RatingModel.find({movieId:movieId}).then(function (rating) {
-            var movie = rating[0];
+        var promise = RatingModel.findOne({movieId:movieId}).then(function (rating) {
+            var movie = rating._doc;
             var star = Math.floor(userstar);
             switch (star){
                 case 1: movie.star1 = movie.star1 + 1; break;
@@ -42,7 +56,7 @@ module.exports = function () {
             }
             movie.rating = (movie.star5*5 + movie.star4*4 + movie.star3*3 + movie.star2*2 + movie.star1*1)/(movie.star1+movie.star2+movie.star3+movie.star4+movie.star5) ;
 
-            RatingModel.update({movieId: movieId}, {
+            return  RatingModel.update({movieId: movieId}, {
                 star1: movie.star1,star2: movie.star2,star3: movie.star3,star4: movie.star4,star5: movie.star5,
                 rating: movie.rating
             });

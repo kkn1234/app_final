@@ -4,12 +4,13 @@
     var app = angular.module('studiobuzz');
 
     app.controller('MovieHomeController', ['MovieService', '$routeParams',
-        '$location', function (MovieService, $routeParams, $location) {
+        '$location' , 'ezfb', function (MovieService, $routeParams, $location, ezfb) {
             var vm = this;
             var userId = $routeParams.uid;
             vm.myInterval = 5000;
             vm.noWrapSlides = false;
             vm.active = 0;
+            vm.isLoggedIn = false;
             //movie nav tab
             vm.viewtab = false;
             vm.featuretab = true;
@@ -20,6 +21,27 @@
             vm.navMoviesList = navMoviesList;
             vm.watchMovieById = watchMovieById;
             vm.navMoviesHome = navMoviesHome;
+            vm.navMoviesLogout = navMoviesLogout;
+
+            //get login status
+            ezfb.getLoginStatus(function (res) {
+                var loginStatus = res;
+                if (loginStatus.status === 'connected') {
+                    vm.isLoggedIn = true;
+                }
+            });
+
+            function navMoviesLogout() {
+                if (vm.isLoggedIn) {
+                    ezfb.logout().then(function(res) {
+                        $location.url('/');
+                    });
+                } else {
+                    $location.url('/');
+                }
+            }
+
+
 
             var movie = MovieService.findAllMovie().then(function (movie) {
                 vm.movie = [];

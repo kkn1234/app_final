@@ -10,8 +10,32 @@
             vm.membershipCancel = membershipCancel;
 
             function membershipCancel() {
-                $location.url('/');
+                navMoviesLogout();
             }
+
+
+            vm.navMoviesLogout = navMoviesLogout;
+            vm.isLoggedIn = false;
+
+            //get login status
+            ezfb.getLoginStatus(function (res) {
+                var loginStatus = res;
+                if (loginStatus.status === 'connected') {
+                    vm.isLoggedIn = true;
+                }
+            });
+
+            function navMoviesLogout() {
+                if (vm.isLoggedIn) {
+                    ezfb.logout().then(function(res) {
+                        $location.url('/');
+                    });
+                } else {
+                    $location.url('/');
+                }
+            }
+
+
 
             function membershipProceed() {
                 var id = $routeParams.duid;

@@ -4,12 +4,34 @@
     var app = angular.module('studiobuzz');
 
     app.controller('DashboardUploadContoller', ['$routeParams', '$location', '$scope', 'WizardHandler',
-        'MovieService', '$interval', '$timeout',
-        function ($routeParams, $location, $scope, WizardHandler, MovieService, $interval, $timeout) {
+        'MovieService', '$interval', '$timeout', 'ezfb',
+        function ($routeParams, $location, $scope, WizardHandler, MovieService, $interval, $timeout, ezfb) {
             var vm = this;
             vm.userId = $routeParams.duid;
             vm.changeLabelAndGoNext = changeLabelAndGoNext;
             vm.finishedWizard = finishedWizard;
+
+            vm.isLoggedIn = false;
+            vm.navLogout = navLogout;
+
+            //get login status
+            ezfb.getLoginStatus(function (res) {
+                var loginStatus = res;
+                if (loginStatus.status === 'connected') {
+                    vm.isLoggedIn = true;
+                }
+            });
+
+            function navLogout() {
+                if (vm.isLoggedIn) {
+                    ezfb.logout().then(function(res) {
+                        $location.url('/');
+                    });
+                } else {
+                    $location.url('/');
+                }
+            }
+
 
             function changeLabelAndGoNext() {
                 WizardHandler.wizard().next();

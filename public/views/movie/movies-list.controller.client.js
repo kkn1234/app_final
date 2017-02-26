@@ -3,8 +3,8 @@
 (function () {
     var app = angular.module('studiobuzz');
 
-    app.controller('MovieListController', ['MovieService', '$scope', '$location', '$routeParams',
-        function (MovieService, $scope, $location, $routeParams) {
+    app.controller('MovieListController', ['MovieService', '$scope', '$location', '$routeParams', 'ezfb',
+        function (MovieService, $scope, $location, $routeParams, ezfb) {
             var vm = this;
             var userId = $routeParams.uid;
             vm.myInterval = 5000;
@@ -20,6 +20,28 @@
             vm.navMoviesList = navMoviesList;
             vm.watchMovieById = watchMovieById;
             vm.navMoviesHome = navMoviesHome;
+            vm.navMoviesLogout = navMoviesLogout;
+            vm.isLoggedIn = false;
+
+            //get login status
+            ezfb.getLoginStatus(function (res) {
+                var loginStatus = res;
+                if (loginStatus.status === 'connected') {
+                    vm.isLoggedIn = true;
+                }
+            });
+
+            function navMoviesLogout() {
+                if (vm.isLoggedIn) {
+                    ezfb.logout().then(function(res) {
+                        $location.url('/');
+                    });
+                } else {
+                    $location.url('/');
+                }
+            }
+
+
 
 
             function watchMovieById(mid) {

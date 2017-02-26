@@ -11,6 +11,7 @@
             var createMembershipUser = createMembershipUser;
             var findMembershipUser = findMembershipUser;
 
+
             function findMembershipUser(user) {
                 var newUser = {
                     username: user.name,

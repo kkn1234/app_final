@@ -3,17 +3,38 @@
 (function () {
     var app = angular.module('studiobuzz');
 
-    app.controller('MoviePaySuccessController', ['$routeParams', 'PaymentService','$location','MovieService', '$scope',
-        function ($routeParams, PaymentService, $location, MovieService, $scope) {
+    app.controller('MoviePaySuccessController', ['$routeParams', 'PaymentService','$location','MovieService', '$scope', 'ezfb',
+        function ($routeParams, PaymentService, $location, MovieService, $scope, ezfb) {
             var vm = this;
             var payment_request_id = $routeParams.payment_request_id;
             var payment_id = $routeParams.payment_id;
             var userId = $routeParams.uid;
             var movieId = $routeParams.mid;
+            vm.isLoggedIn = false;
             console.log('Redirect url');
             console.log([payment_request_id, payment_id]);
             vm.navMoviesList = navMoviesList;
             vm.navMoviesHome = navMoviesHome;
+            vm.navMoviesLogout = navMoviesLogout;
+
+            //get login status
+            ezfb.getLoginStatus(function (res) {
+                var loginStatus = res;
+                if (loginStatus.status === 'connected') {
+                    vm.isLoggedIn = true;
+                }
+            });
+
+            function navMoviesLogout() {
+                if (vm.isLoggedIn) {
+                    ezfb.logout().then(function(res) {
+                        $location.url('/');
+                    });
+                } else {
+                    $location.url('/');
+                }
+            }
+
 
             function navMoviesHome() {
                 var url = '/user/'+userId+ '/home';

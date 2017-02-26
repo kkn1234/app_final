@@ -20,15 +20,21 @@ module.exports = function () {
         model = _model;
     }
 
-    function updateUserRating(rating, userId, ratingflag) {
-        var promise = UserModel.findOneAndUpdate({_id: userId}, {
-            ratingFlag:ratingflag,
-            rating: rating
-        }).then(function (user) {
-            return user;
-        }, function (err) {
-            return err;
-        });
+    function updateUserRating(ratingObj, userId) {
+      var promise = UserModel.findById(userId).then(function (user) {
+        user.rating.push(ratingObj);
+        return user.save();
+      }, function (err) {
+        return err;
+      });
+        // var promise = UserModel.findOneAndUpdate({_id: userId}, {
+        //     ratingFlag:ratingflag}, {
+        //       $push: {rating: rating}
+        // }, done).then(function (user) {
+        //     return user;
+        // }, function (err) {
+        //     return err;
+        // });
         return promise;
     }
 
@@ -61,4 +67,3 @@ module.exports = function () {
     }
 
 };
-

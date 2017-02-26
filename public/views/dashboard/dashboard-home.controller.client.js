@@ -4,14 +4,34 @@
     var app = angular.module('studiobuzz');
 
     app.controller('DashboardHomeContoller', ['$routeParams', 'MembershipUserService',
-        '$scope', '$location', 'MovieService',
-        function ($routeParams, MembershipUserService, $scope, $location, MovieService) {
+        '$scope', '$location', 'MovieService', 'ezfb',
+        function ($routeParams, MembershipUserService, $scope, $location, MovieService, ezfb) {
             var vm = this;
             var userId = $routeParams.duid;
             vm.id = userId;
 
-            vm.navLogout = navLogout;
             vm.navHome = navHome;
+            vm.navLogout = navLogout;
+            vm.isLoggedIn = false;
+
+            //get login status
+            ezfb.getLoginStatus(function (res) {
+                var loginStatus = res;
+                if (loginStatus.status === 'connected') {
+                    vm.isLoggedIn = true;
+                }
+            });
+
+            function navLogout() {
+                if (vm.isLoggedIn) {
+                    ezfb.logout().then(function(res) {
+                        $location.url('/');
+                    });
+                } else {
+                    $location.url('/');
+                }
+            }
+
 
 
 
@@ -20,19 +40,7 @@
                 $location.url(url);
             }
 
-            function navLogout() {
-                if ($scope.logged) {
-                    Facebook.logout(function () {
-                        $scope.$apply(function () {
-                            $scope.user = {};
-                            $scope.logged = false;
-                            $location.url('/');
-                        });
-                    });
-                } else {
-                    $location.url('/');
-                }
-            }
+
 
 
 

@@ -15,9 +15,9 @@
         return api;
 
         function updateUserRating(userId, userstar) {
-            var url = '/api/user/' + userId;
+            var url = '/api/user/' + userId ;
 
-            var promise = $http.put(url, userstar).then(function (user) {
+            var promise = $http.post(url, userstar).then(function (user) {
                 return user;
             }, function (err) {
                 return err;
