@@ -1,8 +1,8 @@
 'use strict';
 
 var Insta = require('instamojo-nodejs');
-var API_KEY = 'd43669c1ebf5deb236ee2d00f8fb3775';
-var AUTH_KEY = 'a0e02c8810fb1baf72152f8408ae82ee';
+var API_KEY = 'a297ce33380dd093085984e8066bfe5f';
+var AUTH_KEY = '6d7359e133091061b8da4269fbbdcdd1';
 Insta.setKeys(API_KEY, AUTH_KEY);
 Insta.isSandboxMode(true);
 
