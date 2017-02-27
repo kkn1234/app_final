@@ -4,7 +4,7 @@ var Insta = require('instamojo-nodejs');
 var API_KEY = 'a297ce33380dd093085984e8066bfe5f';
 var AUTH_KEY = '6d7359e133091061b8da4269fbbdcdd1';
 Insta.setKeys(API_KEY, AUTH_KEY);
-Insta.isSandboxMode(true);
+Insta.isSandboxMode(false);
 
 module.exports = function (app, model) {
 
