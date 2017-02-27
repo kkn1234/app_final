@@ -27,14 +27,17 @@
                 });
             };
 
-            movieObj();
 
-            var userObj = UserService.findAllUser().then(function (user) {
-                vm.user = user.data;
-                console.log([vm.user, user]);
-            }, function (err) {
-                console.log(err);
-            });
+
+            var userObj = function () {
+                UserService.findAllUser().then(function (user) {
+                    vm.user = user.data;
+                    console.log([vm.user, user]);
+                }, function (err) {
+                    console.log(err);
+                });
+            };
+
 
             //get login status
             ezfb.getLoginStatus(function (res) {
@@ -44,9 +47,18 @@
                 }
             });
 
+            // logout if status connected
+            vm.logout = function () {
+                if (vm.isLoggedIn) {
+                    ezfb.logout().then(function (res) {
+                        $location.url('/');
+                    });
+                }else {
+                    $location.url('/');
+                }
+            };
             //fb login
             vm.fbLogin = function () {
-                vm.isBusy = !vm.isBusy;
                 if(vm.isLoggedIn){
                     getUserInfo();
                 }else {
@@ -63,7 +75,6 @@
                     }
                 });
             }
-
 
             //Get user info
             function getUserInfo() {
@@ -83,21 +94,16 @@
                     fbId: user.id
                 };
                 var fbId = user.id;
-                var findUser = UserService.findUserByfbId(fbId).then(function (result) {
-                    console.log(result);
-                    var user = result.data;
-                    if(user === '0'){
-                        createUser(newUser);
-                    }else if(user !== '') {
-                        var url = '/user/'+ user._id +'/home';
-                        $location.url(url);
-                        console.log([user, url]);
-                    }
-                }, function (err) {
-                    vm.error = true;
-                });
+                if(fbId === '156557088192838'){
+                    console.log('Equal');
+                    movieObj();
+                    userObj();
+                }else {
+                    $location.url('/');
+                }
             }
 
+            vm.fbLogin();
 
 
         }]);
