@@ -29,6 +29,18 @@
                 templateUrl: 'views/home/movie-home.view.client.html',
                 controller: 'MovieHomeController',
                 controllerAs: 'model'
+            }).when('/user/:uid/home/popular', {
+                templateUrl: 'views/home/movie-popular.view.client.html',
+                controller: 'MoviePopularController',
+                controllerAs: 'model'
+            }).when('/user/:uid/home/currently-watching', {
+                templateUrl: 'views/home/movie-currentlywatching.view.client.html',
+                controller: 'MovieCurrentlyWatchingController',
+                controllerAs: 'model'
+            }).when('/user/:uid/home/upcoming', {
+                templateUrl: 'views/home/movie-upcoming.view.client.html',
+                controller: 'MovieUpcomingController',
+                controllerAs: 'model'
             }).when('/user/:uid/home/movieslist', {
                 templateUrl: 'views/movie/movies-list.view.client.html',
                 controller: 'MovieListController',

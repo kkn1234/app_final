@@ -18,14 +18,14 @@
             };
 
 
-            var movieObj = function () {
+            // var movieObj = function () {
                 MovieService.findAllMovie().then(function (movie) {
                     vm.movies = movie.data;
                     console.log(vm.movies);
                 }, function (err) {
                     console.log(err + 'error');
                 });
-            };
+            // };
 
 
 

@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="78091433-7318-48b1-9217-383af4cf547a" name="Default" comment="" />
+    <list default="true" id="78091433-7318-48b1-9217-383af4cf547a" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/views/home/movie-currentlywatching.controller.client.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/views/home/movie-currentlywatching.view.client.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/views/home/movie-popular.controller.client.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/views/home/movie-popular.view.client.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/views/home/movie-upcoming.controller.client.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/views/home/movie-upcoming.view.client.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/config.js" afterPath="$PROJECT_DIR$/public/config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/main.css" afterPath="$PROJECT_DIR$/public/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vendorlib/slick-carousel/slick/slick-theme.scss" afterPath="$PROJECT_DIR$/public/vendorlib/slick-carousel/slick/slick-theme.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/home/movie-home.controller.client.js" afterPath="$PROJECT_DIR$/public/views/home/movie-home.controller.client.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/home/movie-home.view.client.html" afterPath="$PROJECT_DIR$/public/views/home/movie-home.view.client.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/movie/movie-pay-success.controller.client.js" afterPath="$PROJECT_DIR$/public/views/movie/movie-pay-success.controller.client.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/movie/movie-pay-success.view.client.html" afterPath="$PROJECT_DIR$/public/views/movie/movie-pay-success.view.client.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/movie/movie-pay.controller.client.js" afterPath="$PROJECT_DIR$/public/views/movie/movie-pay.controller.client.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/movie/movie-pay.view.client.html" afterPath="$PROJECT_DIR$/public/views/movie/movie-pay.view.client.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/movie/movie-play.controller.client.js" afterPath="$PROJECT_DIR$/public/views/movie/movie-play.controller.client.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/movie/movie-play.view.client.html" afterPath="$PROJECT_DIR$/public/views/movie/movie-play.view.client.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/user/admin.dashboard.controller.client.js" afterPath="$PROJECT_DIR$/public/views/user/admin.dashboard.controller.client.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/user/default.controller.client.js" afterPath="$PROJECT_DIR$/public/views/user/default.controller.client.js" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -17,32 +39,12 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="movie-pay.view.client.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/views/movie/movie-pay.view.client.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="85" column="73" lean-forward="false" selection-start-line="85" selection-start-column="73" selection-end-line="85" selection-end-column="73" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin.dashboard.view.client.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/views/user/admin.dashboard.view.client.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="18" column="75" lean-forward="false" selection-start-line="18" selection-start-column="75" selection-end-line="18" selection-end-column="75" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="admin.dashboard.controller.client.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/views/user/admin.dashboard.controller.client.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="107" column="0" lean-forward="true" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
+            <state relative-caret-position="221">
+              <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -51,38 +53,88 @@
       <file leaf-file-name="movie-pay.controller.client.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/views/movie/movie-pay.controller.client.js">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="88" column="54" lean-forward="false" selection-start-line="88" selection-start-column="46" selection-end-line="88" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="movie-play.controller.client.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/views/movie/movie-play.controller.client.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="364">
+              <caret line="167" column="59" lean-forward="false" selection-start-line="167" selection-start-column="46" selection-end-line="167" selection-end-column="59" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="movie-play.view.client.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/views/movie/movie-play.view.client.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="movie-home.view.client.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/views/home/movie-home.view.client.html">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="14" column="28" lean-forward="false" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+              <caret line="67" column="344" lean-forward="false" selection-start-line="67" selection-start-column="344" selection-end-line="67" selection-end-column="344" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server.js">
+      <file leaf-file-name="movie-currentlywatching.view.client.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/views/home/movie-currentlywatching.view.client.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="15" lean-forward="false" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+            <state relative-caret-position="389">
+              <caret line="82" column="6" lean-forward="true" selection-start-line="82" selection-start-column="6" selection-end-line="82" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="payment.service.server.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/server/services/payment.service.server.js">
+      <file leaf-file-name="movie-popular.view.client.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/views/home/movie-popular.view.client.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="26" lean-forward="false" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+            <state relative-caret-position="307">
+              <caret line="83" column="6" lean-forward="true" selection-start-line="83" selection-start-column="6" selection-end-line="83" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user.schema.server.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/models/user/user.schema.server.js">
+      <file leaf-file-name="movie-upcoming.view.client.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/views/home/movie-upcoming.view.client.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="16" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="16" />
+            <state relative-caret-position="307">
+              <caret line="84" column="6" lean-forward="true" selection-start-line="84" selection-start-column="6" selection-end-line="84" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="default.view.client.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/views/user/default.view.client.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="34" column="70" lean-forward="false" selection-start-line="34" selection-start-column="63" selection-end-line="34" selection-end-column="70" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="default.controller.client.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/views/user/default.controller.client.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="39" column="35" lean-forward="false" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -103,21 +155,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>fontfe</find>
-      <find>navfontfamily</find>
-      <find>inver</find>
-      <find>.navbar-inverse .navbar-nav&gt;li&gt;a</find>
-      <find>myInterval</find>
-      <find>active</find>
-      <find>interva</find>
-      <find>imgPaddingThumb</find>
-      <find>san</find>
-      <find>vm.mo</find>
-      <find>comm</find>
-      <find>findMovieRating</find>
-      <find>userr</find>
-      <find>findPaymentById</find>
-      <find>incrementView</find>
       <find>fontfeatured</find>
       <find>userReview</find>
       <find>userId</find>
@@ -133,6 +170,21 @@
       <find>pa</find>
       <find>updateFlag</find>
       <find>isLoggedIn</find>
+      <find>searchselect</find>
+      <find>movieformsearch</find>
+      <find>caro</find>
+      <find>navbar</find>
+      <find>search</find>
+      <find>hover</find>
+      <find>coverwatch</find>
+      <find>carWidth</find>
+      <find>figureimg</find>
+      <find>.slick-prev:</find>
+      <find>.slick-prev:before</find>
+      <find>imgBorder</find>
+      <find>watchMovieById</find>
+      <find>viewNavTab</find>
+      <find>fbLogin</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -141,30 +193,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/public/views/user/default.view.client.html" />
-        <option value="$PROJECT_DIR$/public/views/home/movie-home.view.client.js" />
-        <option value="$PROJECT_DIR$/public/vendorlib/readmore.js" />
-        <option value="$PROJECT_DIR$/public/app.js" />
-        <option value="$PROJECT_DIR$/public/services/payment.service.client.js" />
-        <option value="$PROJECT_DIR$/server/models/payment/payment.schema.server.js" />
-        <option value="$PROJECT_DIR$/server/models/payment/payment.model.server.js" />
         <option value="$PROJECT_DIR$/server/models/rating/rating.schema.server.js" />
         <option value="$PROJECT_DIR$/server/app.js" />
         <option value="$PROJECT_DIR$/server/models/model.server.js" />
         <option value="$PROJECT_DIR$/public/views/dashboard/dashboard-report.view.client.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/server.js" />
-        <option value="$PROJECT_DIR$/public/css/main.css" />
-        <option value="$PROJECT_DIR$/public/views/user/default.controller.client.js" />
         <option value="$PROJECT_DIR$/server/models/user/user.schema.server.js" />
         <option value="$PROJECT_DIR$/public/services/rating.service.client.js" />
         <option value="$PROJECT_DIR$/server/services/rating.service.server.js" />
         <option value="$PROJECT_DIR$/server/models/rating/rating.model.server.js" />
-        <option value="$PROJECT_DIR$/public/views/home/movie-home.view.client.html" />
-        <option value="$PROJECT_DIR$/public/views/home/movie-home.controller.client.js" />
-        <option value="$PROJECT_DIR$/public/views/movie/movie-pay-success.controller.client.js" />
-        <option value="$PROJECT_DIR$/public/views/movie/movie-pay.controller.client.js" />
-        <option value="$PROJECT_DIR$/public/views/movie/movie-play.controller.client.js" />
         <option value="$PROJECT_DIR$/public/views/movie/movies-list.controller.client.js" />
         <option value="$PROJECT_DIR$/public/views/membership/membership-account.controller.client.js" />
         <option value="$PROJECT_DIR$/public/views/membership/membership-login.controller.client.js" />
@@ -172,10 +210,7 @@
         <option value="$PROJECT_DIR$/public/views/dashboard/dashboard-report.controller.client.js" />
         <option value="$PROJECT_DIR$/public/views/dashboard/dashboard-upload.controller.client.js" />
         <option value="$PROJECT_DIR$/public/views/dashboard/dashboard-home.controller.client.js" />
-        <option value="$PROJECT_DIR$/public/views/movie/movie-pay-success.view.client.html" />
-        <option value="$PROJECT_DIR$/public/views/movie/movie-play.view.client.html" />
         <option value="$PROJECT_DIR$/public/views/movie/movies-list.view.client.html" />
-        <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/public/services/movie.service.client.js" />
         <option value="$PROJECT_DIR$/server/services/movie.service.server.js" />
         <option value="$PROJECT_DIR$/server/models/movie/movie.model.server.js" />
@@ -187,11 +222,28 @@
         <option value="$PROJECT_DIR$/public/views/membership/membership-terms.controller.client.js" />
         <option value="$PROJECT_DIR$/public/views/membership/membership-account.view.client.html" />
         <option value="$PROJECT_DIR$/public/views/dashboard/dashboard-home.view.client.html" />
-        <option value="$PROJECT_DIR$/public/config.js" />
-        <option value="$PROJECT_DIR$/public/views/movie/movie-pay.view.client.html" />
         <option value="$PROJECT_DIR$/public/views/user/admin.dashboard.view.client.html" />
-        <option value="$PROJECT_DIR$/public/views/user/admin.dashboard.controller.client.js" />
         <option value="$PROJECT_DIR$/server/services/payment.service.server.js" />
+        <option value="$PROJECT_DIR$/public/vendorlib/slick-carousel/slick/slick-theme.scss" />
+        <option value="$PROJECT_DIR$/public/config.js" />
+        <option value="$PROJECT_DIR$/public/index.html" />
+        <option value="$PROJECT_DIR$/public/views/home/movie-home.controller.client.js" />
+        <option value="$PROJECT_DIR$/public/css/main.css" />
+        <option value="$PROJECT_DIR$/public/views/home/movie-popular.view.client.html" />
+        <option value="$PROJECT_DIR$/public/views/home/movie-upcoming.view.client.html" />
+        <option value="$PROJECT_DIR$/public/views/home/movie-currentlywatching.view.client.html" />
+        <option value="$PROJECT_DIR$/public/views/home/movie-currentlywatching.controller.client.js" />
+        <option value="$PROJECT_DIR$/public/views/home/movie-popular.controller.client.js" />
+        <option value="$PROJECT_DIR$/public/views/home/movie-upcoming.controller.client.js" />
+        <option value="$PROJECT_DIR$/public/views/movie/movie-pay-success.controller.client.js" />
+        <option value="$PROJECT_DIR$/public/views/movie/movie-pay.view.client.html" />
+        <option value="$PROJECT_DIR$/public/views/movie/movie-pay-success.view.client.html" />
+        <option value="$PROJECT_DIR$/public/views/movie/movie-play.view.client.html" />
+        <option value="$PROJECT_DIR$/public/views/user/default.controller.client.js" />
+        <option value="$PROJECT_DIR$/public/views/user/admin.dashboard.controller.client.js" />
+        <option value="$PROJECT_DIR$/public/views/movie/movie-play.controller.client.js" />
+        <option value="$PROJECT_DIR$/public/views/movie/movie-pay.controller.client.js" />
+        <option value="$PROJECT_DIR$/public/views/home/movie-home.view.client.html" />
       </list>
     </option>
   </component>
@@ -228,8 +280,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -239,78 +289,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="finalrelease" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="finalrelease" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="finalrelease" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="finalrelease" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="finalrelease" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="finalrelease" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="finalrelease" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="finalrelease" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="finalrelease" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -345,9 +323,73 @@
               <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="user" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="finalrelease" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="finalrelease" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="finalrelease" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="finalrelease" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="finalrelease" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="finalrelease" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -363,6 +405,9 @@
     <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\project\final project\finalrelease\public\views\home" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\project\final project\finalrelease\public\vendorlib\v-button" />
     </key>
@@ -486,11 +531,12 @@
       <workItem from="1488097762845" duration="11493000" />
       <workItem from="1488122315711" duration="9560000" />
       <workItem from="1488174415347" duration="3111000" />
+      <workItem from="1488351345444" duration="10534000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="145478000" />
+    <option name="totallyTimeSpent" value="156012000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
@@ -500,7 +546,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24763407" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24763407" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3207856" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -550,63 +596,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/server/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="20" lean-forward="false" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/models/membership/membership-user.model.server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="3" lean-forward="true" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="7" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7650">
-          <caret line="450" column="28" lean-forward="false" selection-start-line="450" selection-start-column="28" selection-end-line="450" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/services/rating.service.client.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="43" column="31" lean-forward="true" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/models/model.server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="14" column="3" lean-forward="false" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/models/rating/rating.schema.server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="14" lean-forward="false" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/models/rating/rating.model.server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="48" column="27" lean-forward="false" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/services/rating.service.server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -643,27 +632,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/home/movie-home.controller.client.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="33" column="36" lean-forward="false" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/movie/movie-pay-success.view.client.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="87" lean-forward="false" selection-start-line="22" selection-start-column="87" selection-end-line="22" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/movie/movie-play.view.client.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="87" lean-forward="false" selection-start-line="22" selection-start-column="87" selection-end-line="22" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/views/movie/movies-list.view.client.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -675,27 +643,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
           <caret line="34" column="26" lean-forward="true" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/home/movie-home.view.client.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="34" column="21" lean-forward="true" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/user/default.controller.client.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="78" column="62" lean-forward="false" selection-start-line="78" selection-start-column="62" selection-end-line="78" selection-end-column="62" />
         </state>
       </provider>
     </entry>
@@ -724,13 +671,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
           <caret line="18" column="28" lean-forward="false" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/user/default.view.client.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="34" column="4" lean-forward="true" selection-start-line="34" selection-start-column="4" selection-end-line="35" selection-end-column="69" />
         </state>
       </provider>
     </entry>
@@ -818,31 +758,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/movie/movie-play.controller.client.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="125" column="0" lean-forward="true" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/models/payment/payment.schema.server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="12" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/movie/movie-pay-success.controller.client.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="48" column="42" lean-forward="true" selection-start-line="48" selection-start-column="42" selection-end-line="48" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -860,17 +779,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/movie/movie-pay.view.client.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="85" column="73" lean-forward="false" selection-start-line="85" selection-start-column="73" selection-end-line="85" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/views/user/admin.dashboard.view.client.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
+        <state relative-caret-position="306">
           <caret line="18" column="75" lean-forward="false" selection-start-line="18" selection-start-column="75" selection-end-line="18" selection-end-column="75" />
           <folding />
         </state>
@@ -880,22 +791,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="16" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/user/admin.dashboard.controller.client.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="107" column="0" lean-forward="true" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/movie/movie-pay.controller.client.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="28" lean-forward="false" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
           <folding />
         </state>
       </provider>
@@ -912,6 +807,174 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="26" lean-forward="false" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/vendorlib/slick-carousel/slick/slick-theme.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="91" column="19" lean-forward="false" selection-start-line="91" selection-start-column="19" selection-end-line="91" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="81" column="59" lean-forward="false" selection-start-line="81" selection-start-column="59" selection-end-line="81" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="35" column="37" lean-forward="true" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="534" column="70" lean-forward="false" selection-start-line="534" selection-start-column="70" selection-end-line="534" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/home/movie-currentlywatching.controller.client.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/home/movie-popular.controller.client.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/home/movie-home.controller.client.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/home/movie-upcoming.controller.client.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="65" column="0" lean-forward="true" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/movie/movie-pay-success.controller.client.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="120" column="0" lean-forward="false" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/movie/movie-pay.view.client.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/movie/movie-pay-success.view.client.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="16" lean-forward="true" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/home/movie-currentlywatching.view.client.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="82" column="6" lean-forward="true" selection-start-line="82" selection-start-column="6" selection-end-line="82" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/home/movie-popular.view.client.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="83" column="6" lean-forward="true" selection-start-line="83" selection-start-column="6" selection-end-line="83" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/home/movie-upcoming.view.client.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="84" column="6" lean-forward="true" selection-start-line="84" selection-start-column="6" selection-end-line="84" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/user/default.view.client.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="34" column="70" lean-forward="false" selection-start-line="34" selection-start-column="63" selection-end-line="34" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/user/default.controller.client.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="39" column="35" lean-forward="false" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/movie/movie-play.view.client.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/user/admin.dashboard.controller.client.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/movie/movie-play.controller.client.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="167" column="59" lean-forward="false" selection-start-line="167" selection-start-column="46" selection-end-line="167" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/movie/movie-pay.controller.client.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="88" column="54" lean-forward="false" selection-start-line="88" selection-start-column="46" selection-end-line="88" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/home/movie-home.view.client.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="67" column="344" lean-forward="false" selection-start-line="67" selection-start-column="344" selection-end-line="67" selection-end-column="344" />
           <folding />
         </state>
       </provider>

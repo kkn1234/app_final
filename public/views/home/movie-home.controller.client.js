@@ -23,6 +23,7 @@
             vm.navMoviesHome = navMoviesHome;
             vm.navMoviesLogout = navMoviesLogout;
 
+
             //get login status
             ezfb.getLoginStatus(function (res) {
                 var loginStatus = res;
@@ -105,6 +106,23 @@
                 }
             }
 
+            vm.MovieByList = function (movielist) {
+                switch (movielist) {
+                    case 'upcoming':
+                        $location.url('/user/'+ userId +'/home/upcoming');
+                        break;
+
+                    case 'popular':
+                        $location.url('/user/'+ userId +'/home/popular');
+                        break;
+
+                    case 'current':
+                        $location.url('/user/'+ userId +'/home/currently-watching');
+                        break;
+
+                }
+
+            };
 
 
         }]);

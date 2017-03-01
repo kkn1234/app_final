@@ -12,15 +12,39 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand navfontfamily cursorpointer" ng-click="model.navMoviesHome()">
-                        Studi<i class="fa fa fa-play-circle-o icon-tby" aria-hidden="true"></i>Buzz</a>
+                        StudioBuzz</a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li ><a ng-click="model.navMoviesList()" class="navfontfamily cursorpointer">Movies</a></li>
+                        <!--<li ><a ng-click="model.navMoviesList()" class="navfontfamily cursorpointer">Movies</a></li>-->
+                        <div class="dropdown">
+                            <button class="dropbtn">Movies</button>
+                            <div class="dropdown-content">
+                                <a ng-click="model.navMoviesHome()" class="cursorpointer">Home</a>
+                                <a ng-click="model.MovieByList('popular')" class="cursorpointer">Popular This Week</a>
+                                <a ng-click="model.MovieByList('current')" class="cursorpointer">Currently Watching</a>
+                                <a ng-click="model.MovieByList('upcoming')" class="cursorpointer">Upcoming Movies</a>
+                            </div>
+                        </div>
                     </ul>
 
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a class="cursorpointer" ng-click="model.navMoviesLogout()">Logout</a></li>
+                        <li class="marginall">
+                            <div class="searchselect searchselectrounded searchselectblack">
+                                <select ng-model="movieFilter">
+                                    <option value="" selected>Select Language</option>
+                                    <option value="hindi">Hindi</option>
+                                    <option value="kannada">Kannada</option>
+                                    <option value="tamil">Tamil</option>
+                                    <option value="telugu">Telugu</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li class = "movieformsearch marginall">
+                            <form class="form-inline">
+                                <input type="text" class="form-control" ng-model="model.movieSearch" placeholder="Search...">
+                            </form>
+                        </li>
                     </ul>
 
                 </div>
@@ -30,7 +54,6 @@
     </div>
 </div>
 <!-- End Navbar -->
-
 
 <!-- videogular  -->
 

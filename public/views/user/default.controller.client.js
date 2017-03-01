@@ -36,11 +36,13 @@
             //fb login
             vm.fbLogin = function () {
                 vm.isBusy = !vm.isBusy;
-                if(vm.isLoggedIn){
-                    getUserInfo();
-                }else {
-                    callFbLogin();
-                }
+                var url = '/user/'+ user._id +'/home';
+                $location.url(url);
+                // if(vm.isLoggedIn){
+                //     getUserInfo();
+                // }else {
+                //     callFbLogin();
+                // }
             };
 
             //cal fb login

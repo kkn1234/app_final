@@ -101,6 +101,23 @@
                 vm.payMsg = 'Payment failed. Please try again!.';
             }
 
+            vm.MovieByList = function (movielist) {
+                switch (movielist) {
+                    case 'upcoming':
+                        $location.url('/user/'+ userId +'/home/upcoming');
+                        break;
+
+                    case 'popular':
+                        $location.url('/user/'+ userId +'/home/popular');
+                        break;
+
+                    case 'current':
+                        $location.url('/user/'+ userId +'/home/currently-watching');
+                        break;
+
+                }
+
+            };
 
 
         }]);

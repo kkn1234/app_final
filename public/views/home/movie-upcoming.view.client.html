@@ -1,6 +1,6 @@
 <!--Start Navbar  -->
 <div class="navbar-wrapper" >
-    <div class="container">
+    <div class="container-fluid">
 
         <nav class="navbar navbar-inverse navbar-static-top">
             <div class="container">
@@ -56,15 +56,30 @@
 <!-- End Navbar -->
 
 
-<div class="container">
-    <div class="margintop">
-        <h4 style="color: white">{{model.payMsg}}</h4>
+
+<!-- Start featured list -->
+<div class="margintop">
+<div class="container-fluid marginfeatured">
+    <div class="row">
+        <div class="col-md-12">
+            <h3 class="fontfeatured">UPCOMING MOVIES</h3>
+
+            <div class="marginLeft">
+            <div ng-show="model.featuretab" ng-repeat="image in model.movie | filter: {title: model.movieSearch}
+            | filter: {language: movieFilter} | orderBy: 'uploaded': true">
+                <div class="col-lg-2 col-sm-3 col-xs-4">
+                    <div class="figureimg imageshadow imgBorder marginall">
+                        <ui-thumbnail  src="image.cloudThumbUrl" opts="{width: 164, height: 246}"></ui-thumbnail>
+                        <div class="figcap">
+                            <a ng-click="model.watchMovieById(image._id)"><span class="cursorpointer figureplay text-center glyphicon glyphicon-play-circle"></span></a>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+            </div>
     </div>
 </div>
-
-
-<!--footer start from here-->
-<div class="footer">
-    <p class="footercontent pull-right">&copy; 2017 StudioBuzz. All rights reserved &nbsp;&nbsp;</p>
 </div>
-<!--footer end from here-->
+<!-- End featured list -->
+</div>

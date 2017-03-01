@@ -150,7 +150,8 @@
             var movie = MovieService.findMovieById(movieId).then(function (movie) {
                 vm.movie = movie.data;
                 console.log(vm.movie);
-                var src = movie.data.cloudMovieUrl;
+                // var src = movie.data.cloudMovieUrl;
+                var src = 'https://dpwrg5f5s7hgb.cloudfront.net/58b6937c7d59503792414187.mp4';
                 vm.image = vm.movie.cloudThumbUrl;
                 vm.config = {
                     preload: "none",
@@ -176,6 +177,23 @@
                 console.log(err);
             });
 
+            vm.MovieByList = function (movielist) {
+                switch (movielist) {
+                    case 'upcoming':
+                        $location.url('/user/'+ userId +'/home/upcoming');
+                        break;
+
+                    case 'popular':
+                        $location.url('/user/'+ userId +'/home/popular');
+                        break;
+
+                    case 'current':
+                        $location.url('/user/'+ userId +'/home/currently-watching');
+                        break;
+
+                }
+
+            };
 
 
         }]);
