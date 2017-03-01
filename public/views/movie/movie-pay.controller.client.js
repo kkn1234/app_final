@@ -86,7 +86,7 @@
                     },
 
                     plugins: {
-                        posterImage: vm.movie.coverUrl,
+                        posterImage: vm.movie.cloudCoverUrl,
                         controls: {
                             autoHide: true,
                             autoHideTime: 5000
