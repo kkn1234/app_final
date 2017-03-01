@@ -1,63 +1,114 @@
 <!--Start Navbar  -->
-<div class="navbar-wrapper" >
-    <div class="container">
+<div class="navbar navbar-inverse navbar-static-top navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand navfontfamily cursorpointer" ng-click="model.navMoviesHome()">
+                StudioBuzz</a>
+        </div>
 
-        <nav class="navbar navbar-inverse navbar-static-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand navfontfamily cursorpointer" ng-click="model.navMoviesHome()">
-                        StudioBuzz</a>
-                </div>
-                <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <!--<li ><a ng-click="model.navMoviesList()" class="navfontfamily cursorpointer">Movies</a></li>-->
-                        <div class="dropdown">
-                            <button class="dropbtn">Movies</button>
-                            <div class="dropdown-content">
-                                <a ng-click="model.navMoviesHome()" class="cursorpointer">Home</a>
-                                <a ng-click="model.MovieByList('popular')" class="cursorpointer">Popular This Week</a>
-                                <a ng-click="model.MovieByList('current')" class="cursorpointer">Currently Watching</a>
-                                <a ng-click="model.MovieByList('upcoming')" class="cursorpointer">Upcoming Movies</a>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <!--<li ><a ng-click="model.navMoviesList()" class="navfontfamily cursorpointer">Movies</a></li>-->
+                <!--<div class="dropdown">-->
+                    <!--<button class="dropbtn">Movies &#9662;</button>-->
+                    <!--<div class="dropdown-content">-->
+                        <!--<a ng-click="model.navMoviesHome()" class="cursorpointer">Home</a>-->
+                        <!--<a ng-click="model.MovieByList('popular')" class="cursorpointer">Popular This Week</a>-->
+                        <!--<a ng-click="model.MovieByList('current')" class="cursorpointer">Currently Watching</a>-->
+                        <!--<a ng-click="model.MovieByList('upcoming')" class="cursorpointer">Upcoming Movies</a>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+
+
+                <li class="dropdown">
+                    <a  class="dropdown-toggle cursorpointer drop" data-toggle="dropdown">Movies <b class="caret"></b></a>
+                    <ul class="dropdown-menu multi-column columns-3">
+                        <div class="row">
+                            <div class="col-sm-4" style="border-right: 1px solid #333;">
+                                <ul class="multi-column-dropdown">
+                                    <li><a ng-click="model.navMoviesHome()" class="cursorpointer">Home</a></li>
+                                    <li><a ng-click="model.MovieByList('current')" class="cursorpointer" >Currently Watching</a></li>
+                                    <li><a ng-click="model.MovieByList('popular')" class="cursorpointer">Popular this Week</a></li>
+                                    <li><a ng-click="model.MovieByList('upcoming')" class="cursorpointer">Upcoming Movies</a></li>
+                                    <li><a ng-click="model.MovieByList('upcoming')" class="cursorpointer">Recently Added</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-4">
+                                <ul class="multi-column-dropdown">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Adventure</a></li>
+                                    <li><a href="#">Romance</a></li>
+                                    <li><a href="#">Family</a></li>
+                                    <li><a href="#">Mystery</a></li>
+                                    <li><a href="#">Comedy</a></li>
+                                    <li><a href="#">War</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-4">
+                                <ul class="multi-column-dropdown">
+                                    <li><a href="#">Drama</a></li>
+                                    <li><a href="#">Thriller</a></li>
+                                    <li><a href="#">Crime</a></li>
+                                    <li><a href="#">History</a></li>
+                                    <li><a href="#">Short</a></li>
+                                    <li><a href="#">Horror</a></li>
+                                    <li><a href="#">Fantasy</a></li>
+                                </ul>
                             </div>
                         </div>
                     </ul>
+                </li>
 
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="marginall">
-                            <div class="searchselect searchselectrounded searchselectblack">
-                                <select ng-model="movieFilter">
-                                    <option value="" selected>Select Language</option>
-                                    <option value="hindi">Hindi</option>
-                                    <option value="kannada">Kannada</option>
-                                    <option value="tamil">Tamil</option>
-                                    <option value="telugu">Telugu</option>
-                                </select>
-                            </div>
-                        </li>
-                        <li class = "movieformsearch marginall">
-                            <form class="form-inline">
-                                <input type="text" class="form-control" ng-model="model.movieSearch" placeholder="Search...">
-                            </form>
-                        </li>
+
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li class="marginall">
+                    <!--<div class="dropdown">-->
+                        <!--<button class="dropbtn">Select Your Language</button>-->
+                        <!--<div class="dropdown-content">-->
+                            <!--<a ng-click="model.navMoviesHome()" class="cursorpointer">Hindi</a>-->
+                            <!--<a ng-click="model.MovieByList('popular')" class="cursorpointer">Kannada</a>-->
+                            <!--<a ng-click="model.MovieByList('current')" class="cursorpointer">Tamil</a>-->
+                            <!--<a ng-click="model.MovieByList('upcoming')" class="cursorpointer">Telugu</a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <a class="cursorpointer" style="font-size: 16px; color: #9d9d9d;">Select Your Language &#9662;</a>
+                    <ul class="dropdown" >
+                        <li><a class="cursorpointer">Hindi</a></li>
+                        <li><a class="cursorpointer">Kannada</a></li>
+                        <li><a class="cursorpointer">Malayalam</a></li>
+                        <li><a class="cursorpointer">Tamil</a></li>
+                        <li><a class="cursorpointer">Telugu</a></li>
                     </ul>
 
-                </div>
-            </div>
-        </nav>
 
+                </li>
+                <li class = "movieformsearch marginall">
+                    <form class="form-inline" id="search">
+                        <!--<input type="text" class="form-control" ng-model="model.movieSearch" placeholder="Search...">-->
+                        <input class="inputSearch" style="font-size: 16px; color: #333;"
+                               type="search" placeholder="Search" ng-model="model.Search">
+                    </form>
+                </li>
+            </ul>
+        </div>
     </div>
 </div>
 <!-- End Navbar -->
 
+
+
 <!-- videogular  -->
 
-<div class="margintop">
+<div class="container-fluid margintop">
     <div class="container">
         <div class="row">
             <div class="videogular-container col-xs-12 playerHeight">
