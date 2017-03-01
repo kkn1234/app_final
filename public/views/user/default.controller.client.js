@@ -36,6 +36,9 @@
             //fb login
             vm.fbLogin = function () {
                 vm.isBusy = !vm.isBusy;
+                var user = {
+                    _id: '1254646461231231dada'
+                };
                 var url = '/user/'+ user._id +'/home';
                 $location.url(url);
                 // if(vm.isLoggedIn){
