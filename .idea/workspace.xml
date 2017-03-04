@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="78091433-7318-48b1-9217-383af4cf547a" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/home/movie-currentlywatching.view.client.html" afterPath="$PROJECT_DIR$/public/views/home/movie-currentlywatching.view.client.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/home/movie-home.view.client.html" afterPath="$PROJECT_DIR$/public/views/home/movie-home.view.client.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/home/movie-popular.view.client.html" afterPath="$PROJECT_DIR$/public/views/home/movie-popular.view.client.html" />
@@ -27,7 +28,7 @@
         <entry file="file://$PROJECT_DIR$/public/views/home/movie-home.view.client.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="257">
-              <caret line="76" column="64" lean-forward="false" selection-start-line="76" selection-start-column="64" selection-end-line="76" selection-end-column="64" />
+              <caret line="76" column="36" lean-forward="false" selection-start-line="76" selection-start-column="36" selection-end-line="76" selection-end-column="36" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#0;n#grid-panel-item#0;n#grid-panel#0;n#div#0;n#div#0;n#div#0;n#div#3;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#div#0;n#grid-panel-item#0;n#grid-panel#1;n#div#0;n#div#0;n#div#0;n#div#3;n#!!top" expanded="true" />
@@ -52,7 +53,7 @@
         <entry file="file://$PROJECT_DIR$/public/views/home/movie-popular.view.client.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="274">
-              <caret line="76" column="64" lean-forward="false" selection-start-line="76" selection-start-column="64" selection-end-line="76" selection-end-column="64" />
+              <caret line="76" column="36" lean-forward="false" selection-start-line="76" selection-start-column="36" selection-end-line="76" selection-end-column="36" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#0;n#grid-panel-item#0;n#grid-panel#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -60,11 +61,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="movie-currentlywatching.view.client.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="movie-currentlywatching.view.client.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/views/home/movie-currentlywatching.view.client.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="359">
-              <caret line="76" column="64" lean-forward="false" selection-start-line="76" selection-start-column="64" selection-end-line="76" selection-end-column="64" />
+              <caret line="76" column="36" lean-forward="false" selection-start-line="76" selection-start-column="36" selection-end-line="76" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -80,11 +81,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="movie-upcoming.view.client.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="movie-upcoming.view.client.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/views/home/movie-upcoming.view.client.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="495">
-              <caret line="76" column="64" lean-forward="false" selection-start-line="76" selection-start-column="64" selection-end-line="76" selection-end-column="64" />
+              <caret line="76" column="36" lean-forward="false" selection-start-line="76" selection-start-column="36" selection-end-line="76" selection-end-column="36" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#0;n#grid-panel-item#0;n#grid-panel#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -233,9 +234,9 @@
         <option value="$PROJECT_DIR$/public/css/main.css" />
         <option value="$PROJECT_DIR$/public/css/nav.css" />
         <option value="$PROJECT_DIR$/public/views/home/movie-home.view.client.html" />
-        <option value="$PROJECT_DIR$/public/views/home/movie-currentlywatching.view.client.html" />
-        <option value="$PROJECT_DIR$/public/views/home/movie-popular.view.client.html" />
         <option value="$PROJECT_DIR$/public/views/home/movie-upcoming.view.client.html" />
+        <option value="$PROJECT_DIR$/public/views/home/movie-popular.view.client.html" />
+        <option value="$PROJECT_DIR$/public/views/home/movie-currentlywatching.view.client.html" />
       </list>
     </option>
   </component>
@@ -503,12 +504,12 @@
       <workItem from="1488174415347" duration="3111000" />
       <workItem from="1488351345444" duration="11892000" />
       <workItem from="1488394337493" duration="19000" />
-      <workItem from="1488568131738" duration="11873000" />
+      <workItem from="1488568131738" duration="12096000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="169262000" />
+    <option name="totallyTimeSpent" value="169485000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
@@ -923,7 +924,7 @@
     <entry file="file://$PROJECT_DIR$/public/views/home/movie-home.view.client.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="257">
-          <caret line="76" column="64" lean-forward="false" selection-start-line="76" selection-start-column="64" selection-end-line="76" selection-end-column="64" />
+          <caret line="76" column="36" lean-forward="false" selection-start-line="76" selection-start-column="36" selection-end-line="76" selection-end-column="36" />
           <folding>
             <element signature="n#style#0;n#img#0;n#div#0;n#grid-panel-item#0;n#grid-panel#0;n#div#0;n#div#0;n#div#0;n#div#3;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#grid-panel-item#0;n#grid-panel#1;n#div#0;n#div#0;n#div#0;n#div#3;n#!!top" expanded="true" />
@@ -933,31 +934,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/home/movie-currentlywatching.view.client.html">
+    <entry file="file://$PROJECT_DIR$/public/views/home/movie-upcoming.view.client.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="76" column="64" lean-forward="false" selection-start-line="76" selection-start-column="64" selection-end-line="76" selection-end-column="64" />
-          <folding />
+        <state relative-caret-position="495">
+          <caret line="76" column="36" lean-forward="false" selection-start-line="76" selection-start-column="36" selection-end-line="76" selection-end-column="36" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#grid-panel-item#0;n#grid-panel#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/views/home/movie-popular.view.client.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="274">
-          <caret line="76" column="64" lean-forward="false" selection-start-line="76" selection-start-column="64" selection-end-line="76" selection-end-column="64" />
+          <caret line="76" column="36" lean-forward="false" selection-start-line="76" selection-start-column="36" selection-end-line="76" selection-end-column="36" />
           <folding>
             <element signature="n#style#0;n#img#0;n#div#0;n#grid-panel-item#0;n#grid-panel#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/home/movie-upcoming.view.client.html">
+    <entry file="file://$PROJECT_DIR$/public/views/home/movie-currentlywatching.view.client.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="76" column="64" lean-forward="false" selection-start-line="76" selection-start-column="64" selection-end-line="76" selection-end-column="64" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#grid-panel-item#0;n#grid-panel#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="359">
+          <caret line="76" column="36" lean-forward="false" selection-start-line="76" selection-start-column="36" selection-end-line="76" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
