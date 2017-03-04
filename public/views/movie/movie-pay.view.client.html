@@ -1,43 +1,34 @@
 <!--Start Navbar  -->
-<div class="navbar navbar-inverse navbar-static-top navbar-fixed-top">
-    <div class="container-fluid">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+
+
+
+    <div class="container">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand navfontfamily cursorpointer" ng-click="model.navMoviesHome()">
-                StudioBuzz</a>
+            <div class="navbar-brand">
+                <a class="cursorpointer brand" ng-click="model.navMoviesHome">Studiobuzz</a>
+            </div>
+
         </div>
-
-        <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <!--<li ><a ng-click="model.navMoviesList()" class="navfontfamily cursorpointer">Movies</a></li>-->
-                <!--<div class="dropdown">-->
-                    <!--<button class="dropbtn">Movies &#9662;</button>-->
-                    <!--<div class="dropdown-content">-->
-                        <!--<a ng-click="model.navMoviesHome()" class="cursorpointer">Home</a>-->
-                        <!--<a ng-click="model.MovieByList('popular')" class="cursorpointer">Popular This Week</a>-->
-                        <!--<a ng-click="model.MovieByList('current')" class="cursorpointer">Currently Watching</a>-->
-                        <!--<a ng-click="model.MovieByList('upcoming')" class="cursorpointer">Upcoming Movies</a>-->
-                    <!--</div>-->
-                <!--</div>-->
+        <div class="row row1">
+            <ul class="largenav pull-right">
 
 
 
-                <li class="dropdown">
-                    <a  class="dropdown-toggle cursorpointer drop" data-toggle="dropdown">Movies <b class="caret"></b></a>
+                <li class="dropdown upper-links">
+                    <a class="dropdown-toggle links" data-toggle="dropdown" href="#">Movies <span class="caret"></span></a>
                     <ul class="dropdown-menu multi-column columns-3">
                         <div class="row">
-                            <div class="col-sm-4" style="border-right: 1px solid #333;">
+                            <div class="col-sm-4">
                                 <ul class="multi-column-dropdown">
-                                    <li><a ng-click="model.navMoviesHome()" class="cursorpointer">Home</a></li>
-                                    <li><a ng-click="model.MovieByList('current')" class="cursorpointer" >Currently Watching</a></li>
-                                    <li><a ng-click="model.MovieByList('popular')" class="cursorpointer">Popular this Week</a></li>
-                                    <li><a ng-click="model.MovieByList('upcoming')" class="cursorpointer">Upcoming Movies</a></li>
-                                    <li><a ng-click="model.MovieByList('upcoming')" class="cursorpointer">Recently Added</a></li>
+                                    <li><a class="cursorpointer brand" ng-click="model.navMoviesHome">Home</a></li>
+                                    <li><a href="#">Currently Watching</a></li>
+                                    <li><a href="#">Popular this Week</a></li>
+                                    <li><a href="#">Most Viewed</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Upcoming Movies</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Recently Added</a></li>
                                 </ul>
                             </div>
                             <div class="col-sm-4">
@@ -48,8 +39,6 @@
                                     <li><a href="#">Family</a></li>
                                     <li><a href="#">Mystery</a></li>
                                     <li><a href="#">Comedy</a></li>
-                                    <li><a href="#">War</a></li>
-                                    <br>
                                 </ul>
                             </div>
                             <div class="col-sm-4">
@@ -58,64 +47,53 @@
                                     <li><a href="#">Thriller</a></li>
                                     <li><a href="#">Crime</a></li>
                                     <li><a href="#">History</a></li>
-                                    <li><a href="#">Short</a></li>
                                     <li><a href="#">Horror</a></li>
                                     <li><a href="#">Fantasy</a></li>
-                                    <br>
                                 </ul>
                             </div>
                         </div>
                     </ul>
+
+
+
                 </li>
 
-
-            </ul>
-
-            <ul class="nav navbar-nav navbar-right">
-                <li class="marginall">
-                    <!--<div class="dropdown">-->
-                        <!--<button class="dropbtn">Select Your Language</button>-->
-                        <!--<div class="dropdown-content">-->
-                            <!--<a ng-click="model.navMoviesHome()" class="cursorpointer">Hindi</a>-->
-                            <!--<a ng-click="model.MovieByList('popular')" class="cursorpointer">Kannada</a>-->
-                            <!--<a ng-click="model.MovieByList('current')" class="cursorpointer">Tamil</a>-->
-                            <!--<a ng-click="model.MovieByList('upcoming')" class="cursorpointer">Telugu</a>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <a class="cursorpointer" style="font-size: 14px; color: #9d9d9d;">Select Your Language &#9662;</a>
-                    <ul class="dropdown" >
-                        <li><a class="cursorpointer">Hindi</a></li>
-                        <li><a class="cursorpointer">Kannada</a></li>
-                        <li><a class="cursorpointer">Malayalam</a></li>
-                        <li><a class="cursorpointer">Tamil</a></li>
-                        <li><a class="cursorpointer">Telugu</a></li>
+                <li class="upper-links"><a class="links" href="#">New Release</a></li>
+                <li class="dropdown upper-links">
+                    <a href="#" class="dropdown-toggle links" data-toggle="dropdown">Select Your Language <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li class="profile-li"><a class="profile-links" href="#">Hindi</a></li>
+                        <li class="profile-li"><a class="profile-links" href="#">Kannada</a></li>
+                        <li class="profile-li"><a class="profile-links" href="#">Malayalam</a></li>
+                        <li class="profile-li"><a class="profile-links" href="#">Tamil</a></li>
+                        <li class="profile-li"><a class="profile-links" href="#">Telugu</a></li>
+                        <li class="profile-li"><a class="profile-links" href="#">More...</a></li>
                     </ul>
-
-
                 </li>
-                <li class = "movieformsearch marginall">
-                    <form class="form-inline" id="search">
-                        <!--<input type="text" class="form-control" ng-model="model.movieSearch" placeholder="Search...">-->
-                        <input class="inputSearch" style="font-size: 14px; color: #333;"
-                               type="search" placeholder="Search" ng-model="model.Search">
-                    </form>
+                <li class='upper-links'><a class="links" href="#">Get Notification <i class="fa fa-bell-o" aria-hidden="true"></i></a></li>
+
+                <li class="upper-links dropdown"><a class="links" >My account <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li class="profile-li"><a class="profile-links" href="#">Settings</a></li>
+                        <li class="profile-li"><a class="profile-links" href="#">Notification <i class="fa fa-bell-o" aria-hidden="true"></i></a></li>
+                        <li class="profile-li"><a class="profile-links" href="#">Recent</a></li>
+                        <li class="profile-li"><a class="profile-links" href="#">Logout</a></li>
+                    </ul>
                 </li>
-
-
-
             </ul>
+
 
         </div>
 
+
+
     </div>
-</div>
+</nav>
 <!-- End Navbar -->
 
 
 <!-- Start Movie description -->
 <div class="container-fluid">
-
-
 <div class="container">
     <div class="margintop panel">
         <div class="row">
@@ -174,12 +152,12 @@
 </div>
 </div>
 <!-- End Movie description -->
-
+<br>
 
 
 <!-- Start videogular  -->
 
-<div class="container-fluid margintop">
+<div class="container-fluid marginall">
     <div class="container">
         <div class="row">
             <div class="videogular-container col-xs-12 playerHeight">

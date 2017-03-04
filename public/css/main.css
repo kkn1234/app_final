@@ -123,83 +123,6 @@ height: 100%;
     color: #999;
 }
 
-ul{
-    padding: 0;
-    list-style: none;
-    background: inherit;
-}
-ul li{
-    display: inline-block;
-    position: relative;
-    line-height: 21px;
-    text-align: left;
-}
-ul li a{
-    display: block;
-    padding: 8px 25px;
-    color: #333;
-    text-decoration: none;
-}
-ul li a:hover{
-    color: #fff;
-    background: #939393;
-    text-decoration: none;
-}
-ul li ul.dropdown{
-    min-width: 100%; /* Set width of the dropdown */
-    background: #f2f2f2;
-    display: none;
-    position: absolute;
-    z-index: 999;
-    left: 0;
-}
-ul li:hover ul.dropdown{
-    display: block;	/* Display the dropdown */
-}
-ul li ul.dropdown li{
-    display: block;
-}
-
-.navbar {
-    min-height: 50px;
-    border: 0;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .26);
-}
-
-.navbar-header {
-    float: left;
-    padding-left: 15px;
-}
-
-.navbar-brand {
-    height: 50px;
-    padding: 0 15px;
-    font-size: inherit;
-    line-height: 50px;
-}
-
-.navbar-nav {
-    float: left;
-    margin: 0;
-}
-
-.navbar-nav > li {
-    float: left;
-}
-
-.navbar-nav > li > a {
-    padding: 0 15px;
-    line-height: 50px;
-}
-
-.navbar-text {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.navbar-default .navbar-brand{
-    color: #333;
-}
 /*carosel*/
 
 
@@ -215,12 +138,12 @@ ul li ul.dropdown li{
     width: 100%;
 }
 .covercarousel {
-    height: 450px;
+    height: 350px;
     margin-left: -15px;
     margin-right: -15px;
 }
 .margintopcarousel{
-    margin-top: 60px;
+    margin-top: 110px;
 }
 .covercarousel .item{
     height: 100%;
@@ -271,22 +194,22 @@ ul li ul.dropdown li{
 
 @media (min-width: 768px) {
     /* Navbar positioning foo */
-    .navbar-wrapper {
-        margin-top: 20px;
-    }
-    .navbar-wrapper .container {
-        padding-right: 15px;
-        padding-left: 15px;
-    }
-    .navbar-wrapper .navbar {
-        padding-right: 0;
-        padding-left: 0;
-    }
+    /*.navbar-wrapper {*/
+        /*margin-top: 20px;*/
+    /*}*/
+    /*.navbar-wrapper .container {*/
+        /*padding-right: 15px;*/
+        /*padding-left: 15px;*/
+    /*}*/
+    /*.navbar-wrapper .navbar {*/
+        /*padding-right: 0;*/
+        /*padding-left: 0;*/
+    /*}*/
 
     /* The navbar becomes detached from the top, so we round the corners */
-    .navbar-wrapper .navbar {
-        border-radius: 4px;
-    }
+    /*.navbar-wrapper .navbar {*/
+        /*border-radius: 4px;*/
+    /*}*/
 
     .featurette-heading {
         font-size: 50px;
@@ -332,8 +255,27 @@ ul li ul.dropdown li{
 
 /*watch now btn*/
 #content{
-    padding-top: 30px;
+    padding-top: 96px;
     text-align: center;
+}
+
+.brand{
+    text-decoration: none;
+    color: #ccc;
+}
+
+
+.brand:hover{
+    text-decoration: none;
+    color: #9d9d9d;
+}
+
+.fontcolor{
+    color: rgba(191, 49, 49, 0.99);
+    font-size: 18px;
+    /*color: #9d9d9d;*/
+    border-left: 3px solid #2196f3;
+    padding-left: 2px;
 }
 
 .btnPrimary{
@@ -392,6 +334,10 @@ ul li ul.dropdown li{
 
 .margintop{
     margin-top: 95px;
+}
+
+.margintopDefault{
+    margin-top: 54px;
 }
 
 .btn-facebook {
@@ -486,6 +432,7 @@ ul li ul.dropdown li{
 .thumbimg{
     display: block;
 }
+
 .figcap{
     /*padding: 2em;*/
     height: 100%;
