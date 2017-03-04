@@ -266,6 +266,9 @@ body{
     border-color: rgba(191, 49, 49, 0.99);
 }
 
+.navbar-inverse .navbar-brand{
+    color: #ccc;
+}
 
 .dropdown-menu.columns-3 {
     min-width: 600px;
