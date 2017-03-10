@@ -10,14 +10,14 @@
                         <div class="row">
                             <div class="col-sm-4">
                                 <ul class="multi-column-dropdown">
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">Currently Watching</a></li>
-                                    <li><a href="#">Popular this Week</a></li>
-                                    <li><a href="#">Most Viewed</a></li>
+                                    <li><a ng-click="model.navMoviesHome()" class="cursorpointer">Home</a></li>
+                                    <li><a ng-click="model.MovieByList('current')" class="cursorpointer">Currently Watching</a></li>
+                                    <li><a ng-click="model.MovieByList('popular')" class="cursorpointer">Popular this Week</a></li>
+                                    <li><a ng-click="model.MovieByList('most')" class="cursorpointer">Most Viewed</a></li>
                                     <li class="divider"></li>
-                                    <li><a href="#">Upcoming Movies</a></li>
+                                    <li><a ng-click="model.MovieByList('upcoming')" class="cursorpointer">Upcoming Movies</a></li>
                                     <li class="divider"></li>
-                                    <li><a href="#">Recently Added</a></li>
+                                    <li><a ng-click="model.MovieByList('upcoming')" class="cursorpointer">Recently Added</a></li>
                                 </ul>
                             </div>
                             <div class="col-sm-4">
@@ -74,7 +74,7 @@
 
             <div class="col-sm-2">
 
-                <h2 style="margin:10px 0px 0px 0px; font-size: 22px;"><span class="largenav"><a class="cursorpointer brand" ng-click="model.navMoviesHome">Studiobuzz </a></span> </h2>
+                <h2 style="margin:10px 0px 0px 0px; font-size: 22px;"><span class="largenav"><a class="cursorpointer brand" ng-click="model.navMoviesHome()">Studiobuzz </a></span> </h2>
 
             </div>
 
